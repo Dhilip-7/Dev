@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://ai-public.creatie.ai/gen_page/tailwind-custom.css" rel="stylesheet" />
+    <link rel="stylesheet" href="src/index.css" />
+    <style>
+        /* Custom Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in { animation: fadeIn 1s ease-out; }
+
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        .animate-slide-in-left { animation: slideInLeft 1s ease-out; }
+
+        @keyframes slideInRight {
+            from { opacity: 0; transform: translateX(20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        .animate-slide-in-right { animation: slideInRight 1s ease-out; }
+
+        /* Smooth Scroll */
+        html { scroll-behavior: smooth; }
+
+        /* Mobile Menu Styles */
+        #mobileMenu {
+            display: none; /* Hidden by default */
+            transition: all 0.3s ease-in-out;
+        }
+        #mobileMenu.open {
+            display: block; /* Show when toggled */
+        }
+        .about-image {
+            width: 300px; /* Adjust as needed */
+            height: 300px; /* Make sure width and height are equal */
+            border-radius: 50%; /* This makes it round */
+            object-fit: cover; /* Ensures image covers the area */
+            border: 3px solid #333; /* Optional border */
+        } 
+        .profile-hover:hover {
+                 transform: scale(1.1); /* Slightly enlarge the image */
+                 box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+        }
+        body {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* IE/Edge */
+    user-select: none;         /* Standard syntax */
+        } 
+        h1, p {
+            opacity: 0;
+            animation: fadeIn 2s ease-in forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+  
+      
+    </style>
+    <script src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script>
+    <script src="https://ai-public.creatie.ai/gen_page/tailwind-config.min.js" data-color="#000000" data-border-radius="medium"></script>
+    <link  id="favicon" rel="icon" type="image/png" href="favicon1.png">
+</head>
+
+<body class="bg-gray-50">
+   
+    <!-- Navbar -->
+    <nav class="fixed top-0 z-50 w-full bg-white border-b border-gray-200 transition-all duration-300">
+        <div class="px-3 py-3 lg:px-5 lg:pl-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center justify-start">
+                    <!-- Mobile Menu Button -->
+                      <!-- Back Button -->
+                <a href="javascript:history.back()" class="p-2 text-gray-600 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100">
+                  <i class="fas fa-arrow-left"></i>
+              </a>
+                    
+                    <a href="#" class="flex ml-2 md:mr-24">
+                        <span class="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap">Back</span>
+                    </a>
+                </div>
+                <!-- Desktop Menu -->
+              
+        <div id="mobileMenu" class="lg:hidden bg-white border-t border-gray-200">
+            <div class="px-3 py-2 space-y-2">
+             
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="pt-16">
+    
+   
+       
+     
+       
+      
+      
+      
+                
+                    <section id="resources" class="py-24 bg-gray-50">
+                        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                            <h2 class="text-3xl font-bold tracking-tight text-gray-900 text-center mb-16"> Free Learning Resources</h2>
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                                <div class="bg-white p-6 rounded-lg shadow-sm transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-custom">
+                                    <h3 class="text-xl font-bold mb-4 text-custom">Free Websites</h3>
+                                    <ul class="space-y-3 text-gray-600">
+                                        <li><a href="https://www.netacad.com/resources/program-info/ccst-cybersecurity" target="_blank">• Cisco ( Ethical Hacking Cources)</a></li>
+                                        <li><a href="https://tryhackme.com/" target="_blank">• TRY HACK ME ( Web Pentesting )</a></li>
+                                        <li><a href="https://owasp.org/www-project-top-ten/" target="_blank">• OWASP Top 10 Guide</a></li>
+                                        <li><a href="https://www.linkedin.com/posts/vanka-dhilip_what-is-cybersecurity-free-courses-and-activity-7286724021797142529-kYtp?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFG2m_IBvev-42Y_DBcBWqjDz6c59zu-4Gs" target="_blank">• For More Check linkedin Post</a></li>
+                                    </ul><a href="https://www.linkedin.com/posts/vanka-dhilip_what-is-cybersecurity-free-courses-and-activity-7286724021797142529-kYtp?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFG2m_IBvev-42Y_DBcBWqjDz6c59zu-4Gs" class="mt-4 inline-block text-custom hover:text-indigo-600">View All →</a></div>
+                                    <div class="bg-white p-6 rounded-lg shadow-sm transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-custom">
+                                        <h3 class="text-xl font-bold mb-4 text-custom">Cources</h3>
+                                        <ul class="space-y-3 text-gray-600">
+                                            <li><a href="https://infyspringboard.onwingspan.com/web/en/app/toc/lex_auth_0132918171010580484361_shared/overview" target="_blank">• Infosys Spring Board</a></li>
+                                            <li><a href="https://www.netacad.com/" target="_blank">• Cisco NetCad</a></li>
+                                            <li><a href="https://www.udemy.com/" target="_blank">• Udemy (Paid)</a></li>
+                                            <li><a href="https://www.linkedin.com/posts/vanka-dhilip_what-is-cybersecurity-free-courses-and-activity-7286724021797142529-kYtp?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFG2m_IBvev-42Y_DBcBWqjDz6c59zu-4Gs target="_blank">• For More Check linkedin Post</a></li>
+                                        </ul><a href="freecourses.html" class="mt-4 inline-block text-custom hover:text-indigo-600">View All →</a>
+                                    </div>
+                                    <div class="bg-white p-6 rounded-lg shadow-sm transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-custom">
+                                        <h3 class="text-xl font-bold mb-4 text-custom">E-Books</h3>
+                                        <ul class="space-y-3 text-gray-600">
+                                            <li><a href="https://www.pdfdrive.com/web-application-hacking-advanced-sql-injection-and-data-store-attackspdf-e57997951.html" target="_blank">•Web Application Hacking </a></li>
+                                            <li><a href="https://www.pdfdrive.com/black-hat-python-python-programming-for-hackers-and-pentesters-e158527426.html" target="_blank">•Black hat Python </a></li>
+                                            <li><a href="https://www.pdfdrive.com/hacking-hacking-practical-guide-for-beginners-hacking-with-python-e182434771.html" target="_blank">•Hacking Hacking Practical Guide for Beginners </a></li>
+                                          
+                                        </ul><a href="https://www.pdfdrive.com/" class="mt-4 inline-block text-custom hover:text-indigo-600">View All →</a>
+                                    </div>
+                                    <div class="bg-white p-6 rounded-lg shadow-sm transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-custom">
+                                      <h3 class="text-xl font-bold mb-4 text-custom">Certifications</h3>
+                                        <ul class="space-y-3 text-gray-600">
+                                            <li><a href="comingsoon.html" target="_blank">•Certified Ethical Hacker (CEH)</a></li>
+                                            <li><a href="comingsoon.html" target="_blank">•Offensive Security Certified Professional</a></li>
+                                            <li><a href="comingsoon.html" target="_blank">•CompTIA Security+</a></li>
+                                          
+                                        </ul><a href="comingsoon.html" class="mt-4 inline-block text-custom hover:text-indigo-600">View All →</a>
+
+                                </div>
+                            </div>
+                        </section>
+            </div>
+            
+
+        
+  
+
+       
+
+   
+        
+
+        <!-- Footer -->
+        <footer class="bg-gray-900">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                <div class="flex justify-center space-x-6 mb-8">
+                    <a href="https://github.com/Dhilip-7" class="text-gray-400 hover:text-white transition-all duration-300 transform hover:scale-110">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/vanka-dhilip/" class="text-gray-400 hover:text-white transition-all duration-300 transform hover:scale-110">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                    <a href="https://www.fast.com" class="text-gray-400 hover:text-white transition-all duration-300 transform hover:scale-110">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                </div>
+                <div class="text-center text-gray-400">
+                    <p>© 2024 Dhilip Kumar. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+    
+    <script>
+        // Toggle Mobile Menu
+        const toggleSidebar = document.getElementById('toggleSidebar');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        toggleSidebar.addEventListener('click', () => {
+            mobileMenu.classList.toggle('open');
+        });
+
+        // Close Mobile Menu When a Link is Clicked
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('open');
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("contextmenu", function(event) {
+            event.preventDefault(); // Disable right-click
+        });
+        
+        document.addEventListener("copy", function(event) {
+            event.preventDefault(); // Disable copying
+        });
+        
+        document.addEventListener("cut", function(event) {
+            event.preventDefault(); // Disable cutting
+        });
+        
+        document.addEventListener("paste", function(event) {
+            event.preventDefault(); // Disable pasting
+        });
+        </script>
+   
+
+        
+</body>
+</html>
